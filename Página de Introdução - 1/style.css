@@ -1,0 +1,88 @@
+/* Resetando margens e padding padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  position: relative;
+  height: 140px;
+  background-color: #f2f2f2; /* Cor de fundo para separar a área */
+  box-shadow: 10px 10px 100px rgb(209, 206, 206);
+}
+
+/* Logo centralizada */
+.logo {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5px;
+}
+
+.logo h1 {
+  font-family: "Pacifico", cursive;
+  color: #ff0000;
+  font-size: 47px;
+  text-shadow: 2px 2px 5px gray;
+}
+
+.logo p {
+  font-family: "Pacifico", cursive;
+  color: #ff0000;
+  font-size: 21px;
+  text-shadow: 2px 2px 5px gray;
+}
+
+/* Estilo dos botões */
+.left-buttons,
+.right-buttons {
+  display: flex;
+  gap: 100px;
+  margin-top: 7px;
+}
+
+.left-buttons a,
+.right-buttons a {
+  font-family: Arial, sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+  position: relative;
+  background-color: transparent; /* Fundo transparente para o botão */
+  border: 2px solid transparent; /* Não exibe borda inicialmente */
+}
+
+/* Efeito de hover nos botões */
+.left-buttons a:hover,
+.right-buttons a:hover {
+  color: #ff0000;
+  background-color: rgba(255, 0, 0, 0.1); /* Fundo suave quando hover */
+  border-color: #ff0000; /* Borda vermelha ao passar o mouse */
+}
+
+/* Quadrado atrás do botão */
+.left-buttons a:hover::before,
+.right-buttons a:hover::before {
+  content: "";
+  position: absolute;
+  top: -2px; /* Ajuste para que o quadrado fique atrás do botão */
+  left: -2px;
+  border: 2px solid #ff0000; /* Cor do quadrado */
+  border-radius: 10px; /* Bordas arredondadas */
+  z-index: -1; /* Coloca o quadrado atrás do botão */
+}
