@@ -22,6 +22,18 @@ body {
   box-shadow: 10px 10px 100px rgb(209, 206, 206);
 }
 
+/* Estilo do retângulo */
+.listra {
+  width: 100vw;
+  height: 100px;
+  background-color: #ff0000;
+  box-shadow: 5px 5px 50px rgb(209, 206, 206);
+  position: absolute;
+  top: -94px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Logo centralizada */
 .logo {
   text-align: center;
