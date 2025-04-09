@@ -79,7 +79,7 @@ body {
   border: 2px solid transparent; /* Não exibe borda inicialmente */
 }
 
-/* Efeito de hover nos botões */
+/* Efeito de hover nos botões  */
 .left-buttons a:hover,
 .right-buttons a:hover {
   color: #ff0000;
