@@ -1,75 +1,45 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  
+    margin: 20px;
 }
 
-.contact-form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 500px;
-      box-shadow: 0px 8px 0px rgba(0, 0, 0,0.1); /* Sombra aplicada */
-
-}
-
-.contact-form h2 {
-    text-align: center;
+h1 {
     color: #333;
 }
 
-.form-group {
-    margin-bottom: 15px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
+input[type="text"] {
+    margin-left: 10px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra aplicada */
+    padding: 5px;
+    border-radius: 5px;
 }
 
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra aplicada */
+input[type="checkbox"]:checked + input[type="text"] {
+    text-decoration: line-through;
+    color: gray;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    margin-left: 5px;
+    padding: 5px 10px;
     border: none;
-    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }

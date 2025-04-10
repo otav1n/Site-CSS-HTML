@@ -61,7 +61,7 @@ body {
 .left-buttons,
 .right-buttons {
   display: flex;
-  gap: 100px;
+  gap: 50px;
   margin-top: 7px;
 }
 
@@ -73,18 +73,18 @@ body {
   font-weight: 600;
   text-decoration: none;
   padding: 10px 20px;
-  transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+  transition: all 0.3s ease; 
   position: relative;
-  background-color: transparent; /* Fundo transparente para o botão */
-  border: 2px solid transparent; /* Não exibe borda inicialmente */
+  background-color: transparent; 
+  border: 2px solid transparent; 
 }
 
 /* Efeito de hover nos botões  */
 .left-buttons a:hover,
 .right-buttons a:hover {
   color: #ff0000;
-  background-color: rgba(255, 0, 0, 0.1); /* Fundo suave quando hover */
-  border-color: #ff0000; /* Borda vermelha ao passar o mouse */
+  background-color: rgba(255, 0, 0, 0.1); 
+  border-color: #ff0000; 
 }
 
 /* Quadrado atrás do botão */
@@ -92,9 +92,59 @@ body {
 .right-buttons a:hover::before {
   content: "";
   position: absolute;
-  top: -2px; /* Ajuste para que o quadrado fique atrás do botão */
+  top: -2px; 
   left: -2px;
-  border: 2px solid #ff0000; /* Cor do quadrado */
-  border-radius: 10px; /* Bordas arredondadas */
-  z-index: -1; /* Coloca o quadrado atrás do botão */
+  border: 2px solid #ff0000; 
+  border-radius: 10px; 
+  z-index: -1; 
 }
+
+/* Estilo da seção de texto com imagem */
+.texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #333;
+  text-align: left;
+}
+
+/* Contêiner interno que agrupa o texto e a imagem lado a lado */
+.conteudo-completo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+
+.texto-conteudo {
+  max-width: 600px;
+}
+
+
+.texto-conteudo h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #d10000;
+}
+
+
+.texto-conteudo p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+
+.texto-imagem img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
