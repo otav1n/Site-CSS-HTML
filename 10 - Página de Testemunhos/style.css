@@ -5,17 +5,14 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-  
+
 body {
     background-color: #e9ecef;
     padding: 0;
     margin: 0;
 }
-  
 
 /* ==== Cabeçalho ====== */
-
-
 .ds_lg {
     display: flex;
     justify-content: space-between;
@@ -26,7 +23,7 @@ body {
     background-color: #f2f2f2;
     box-shadow: 10px 10px 30px rgb(209, 206, 206);
 }
-  
+
 /* Faixa vermelha */
 .listra {
     width: 100vw;
@@ -38,7 +35,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
-  
+
 /* Logo */
 .logo {
     text-align: center;
@@ -47,30 +44,30 @@ body {
     transform: translateX(-50%);
     top: 5px;
 }
-  
+
 .logo h1 {
     font-family: "Pacifico", cursive;
     color: #ff0000;
     font-size: 47px;
     text-shadow: 2px 2px 5px gray;
+    text-transform: none; /* Remover transformação para maiúsculas */
 }
-  
+
 .logo p {
     font-family: "Pacifico", cursive;
     color: #ff0000;
     font-size: 21px;
     text-shadow: 2px 2px 5px gray;
 }
-  
-/* Botões esquerda e direita */
 
+/* Botões esquerda e direita */
 .left-buttons,
 .right-buttons {
     display: flex;
     gap: 50px;
     margin-top: 7px;
 }
-  
+
 .left-buttons a,
 .right-buttons a {
     font-family: Arial, sans-serif;
@@ -84,14 +81,14 @@ body {
     background-color: transparent;
     border: 2px solid transparent;
 }
-  
+
 .left-buttons a:hover,
 .right-buttons a:hover {
     color: #ff0000;
     background-color: rgba(255, 0, 0, 0.1);
     border-color: #ff0000;
 }
-  
+
 .left-buttons a:hover::before,
 .right-buttons a:hover::before {
     content: "";
