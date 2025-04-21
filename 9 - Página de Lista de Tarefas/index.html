@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>To Do List</h1>
-    <input type="text" placeholder="Adicione uma nova tarefa">
-    <button>Adicionar</button>
+    
+    <div class="container">
+        <h1>lista de tarefas</h1>
+        <input type="text" placeholder="Adicionar nova tarefa">
+        <button>+</button>
 
-    <h2>Tarefas</h2>
-    <ul>
-        <li>
-            <input type="checkbox">
-            <input type="text" value="Fazer trabalho de Java" disabled>
-            <button>Editar</button>
-            <button>Excluir</button>
-        </li>
-        <li>
-            <input type="checkbox">
-            <input type="text" value="Fazer lista Gercino" disabled>
-            <button>Editar</button>
-            <button>Excluir</button>
-        </li>
-        <li>
-            <input type="checkbox">
-            <input type="text" value="Fazer trabalho de Web" disabled>
-            <button>Editar</button>
-            <button>Excluir</button>
-        </li>
-    </ul>
+        <ul> <!-- ul para criar a lista -->
+            <li> <!-- para cirar os itens dentro desta lista -->
+                <input type="checkbox">
+                <span class="tarefa-texto">Limpar salão</span>
+           
+                <button class="botao-editar">Editar</button>
+                <button class="botao-excluir">Excluir</button>
+            </li>
+
+            <li>
+                <input type="checkbox">
+                <span class="tarefa-texto">Pedido da coca</span>
+           
+                <button class="botao-editar">Editar</button>
+                <button class="botao-excluir">Excluir</button>
+            </li>
+
+            <li>
+                <input type="checkbox">
+                <span class="tarefa-texto">Salgado para Dona Maria</span>
+           
+                <button class="botao-editar">Editar</button>
+                <button class="botao-excluir">Excluir</button>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
