@@ -1,43 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <div class="container">
-        <h1>lista de tarefas</h1>
-        <input type="text" placeholder="Adicionar nova tarefa">
-        <button>+</button>
 
-        <ul> <!-- ul para criar a lista -->
-            <li> <!-- para cirar os itens dentro desta lista -->
-                <input type="checkbox">
-                <span class="tarefa-texto">Limpar salão</span>
-           
-                <button class="botao-editar">Editar</button>
-                <button class="botao-excluir">Excluir</button>
-            </li>
-
-            <li>
-                <input type="checkbox">
-                <span class="tarefa-texto">Pedido da coca</span>
-           
-                <button class="botao-editar">Editar</button>
-                <button class="botao-excluir">Excluir</button>
-            </li>
-
-            <li>
-                <input type="checkbox">
-                <span class="tarefa-texto">Salgado para Dona Maria</span>
-           
-                <button class="botao-editar">Editar</button>
-                <button class="botao-excluir">Excluir</button>
-            </li>
-        </ul>
+  <!-- Cabeçalho -->
+  <div class="ds_lg">
+    <!-- Botões do lado esquerdo -->
+    <div class="left-buttons">
+      <a href="#">Página Inicial</a>
+      <a href="#">Promoções</a>
+      <a href="#">Cardápio</a>
     </div>
+
+    <!-- Logo centralizada -->
+    <div class="logo">
+      <h1>Divino Sabor</h1>
+      <p>Café - Salgados - Sucos - Bebidas</p>
+    </div>
+
+    <!-- Botões do lado direito -->
+    <div class="right-buttons">
+      <a href="#">Galeria de Fotos</a>
+      <a href="#">Contato</a>
+      <a href="#">Login</a>
+    </div>
+  </div>
+
+  <!-- Faixa vermelha no topo -->
+  <div class="listra"></div>
+
+  <!-- Lista de tarefas -->
+  <div class="tarefas">
+    <h1>Lista de Tarefas</h1>
+    <div class="input-area">
+      <input type="text" placeholder="Adicionar nova tarefa" />
+      <button>+</button>
+    </div>
+
+    <ul>
+      <li>
+        <input type="checkbox" />
+        <span class="tarefa-texto">Limpar salão</span>
+        <button class="botao-editar">Editar</button>
+        <button class="botao-excluir">Excluir</button>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <span class="tarefa-texto">Pedido da coca</span>
+        <button class="botao-editar">Editar</button>
+        <button class="botao-excluir">Excluir</button>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <span class="tarefa-texto">Salgado para Dona Maria</span>
+        <button class="botao-editar">Editar</button>
+        <button class="botao-excluir">Excluir</button>
+      </li>
+    </ul>
+  </div>
+
 </body>
 </html>

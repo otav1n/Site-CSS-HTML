@@ -1,44 +1,145 @@
-* { /*resetando o css*/
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-}
-
-body {
+  }
+  
+  body {
     background-color: #e9ecef;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* ===================== */
+  /* ==== Cabeçalho ====== */
+  /* ===================== */
+  
+  .ds_lg {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 80vh; /*altura*/
-}
-
-.container {
-    width: 450px; /*largura da caixa*/
+    padding: 10px 100px;
+    position: relative;
+    height: 140px;
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 30px rgb(209, 206, 206);
+  }
+  
+  /* Faixa vermelha */
+  .listra {
+    width: 100vw;
+    height: 100px;
+    background-color: #ff0000;
+    box-shadow: 5px 5px 30px rgb(209, 206, 206);
+    position: absolute;
+    top: -94px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Logo */
+  .logo {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+  }
+  
+  .logo h1 {
+    font-family: "Pacifico", cursive;
+    color: #ff0000;
+    font-size: 47px;
+    text-shadow: 2px 2px 5px gray;
+  }
+  
+  .logo p {
+    font-family: "Pacifico", cursive;
+    color: #ff0000;
+    font-size: 21px;
+    text-shadow: 2px 2px 5px gray;
+  }
+  
+  /* Botões esquerda e direita */
+  .left-buttons,
+  .right-buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 7px;
+  }
+  
+  .left-buttons a,
+  .right-buttons a {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    background-color: transparent;
+    border: 2px solid transparent;
+  }
+  
+  .left-buttons a:hover,
+  .right-buttons a:hover {
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-color: #ff0000;
+  }
+  
+  .left-buttons a:hover::before,
+  .right-buttons a:hover::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  /* ===================== */
+  /* ==== Tarefas =========*/
+  /* ===================== */
+  
+  .tarefas {
+    max-width: 500px;
+    width: 90%;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    padding: 20px 30px; /*espaçamento entre os elemntos internos*/
-}
-
-h1 {
+    padding: 20px 30px;
+    margin: 80px auto 40px auto;
+  }
+  
+  .tarefas h1 {
     color: #444444;
     text-align: center;
     margin-bottom: 25px;
     font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-input[type="text"]{
+  }
+  
+  .input-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     font-size: 16px;
-}
-
-button {
+  }
+  
+  button {
     background-color: #4caf50;
     color: white;
     border: none;
@@ -47,38 +148,37 @@ button {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: #45a049;
-}
-
-ul {
-    list-style-type: none; /*/* Remove os marcadores*/
-    margin-top: 20px;
-}
-
-ul li {
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
     display: flex;
     align-items: center;
     padding: 15px 10px;
     border-bottom: 1px solid #ddd;
     transition: background-color 0.3s ease;
-}
-
-ul li:hover {
+  }
+  
+  ul li:hover {
     background-color: #f9f9f9;
-}
-
-.tarefa-texto {
+  }
+  
+  .tarefa-texto {
     flex: 1;
     margin: 0 10px;
     font-size: 16px;
     color: #555;
-}
-
-.botao-editar,
-.botao-excluir {
+  }
+  
+  .botao-editar,
+  .botao-excluir {
     background-color: transparent;
     border: none;
     padding: 5px 10px;
@@ -86,25 +186,26 @@ ul li:hover {
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease;
-}
-
-.botao-editar {
+  }
+  
+  .botao-editar {
     color: #2196f3;
-}
-
-.botao-excluir {
+  }
+  
+  .botao-excluir {
     color: #f44336;
-}
-
-.botao-editar:hover {
+  }
+  
+  .botao-editar:hover {
     background-color: rgba(33, 150, 243, 0.1);
-}
-
-.botao-excluir:hover {
+  }
+  
+  .botao-excluir:hover {
     background-color: rgba(244, 67, 54, 0.1);
-}
-
-input[type="checkbox"]:checked + .tarefa-texto {
+  }
+  
+  input[type="checkbox"]:checked + .tarefa-texto {
     text-decoration: line-through;
     color: #888;
-}
+  }
+  
