@@ -1,0 +1,210 @@
+/* Resetando margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container principal */
+  .ds_lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    position: relative;
+    height: 140px;
+    background-color: #f2f2f2; /* Cor de fundo para separar a área */
+    box-shadow: 10px 10px 30px rgb(209, 206, 206);
+  }
+  
+  /* Estilo do retângulo */
+  .listra {
+    width: 100vw;
+    height: 100px;
+    background-color: #ff0000;
+    box-shadow: 5px 5px 30px rgb(209, 206, 206);
+    position: absolute;
+    top: -94px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Logo centralizada */
+  .logo {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+  }
+  
+  .logo h1 {
+    font-family: "Pacifico", cursive;
+    color: #ff0000;
+    font-size: 47px;
+    text-shadow: 2px 2px 5px gray;
+  }
+  
+  .logo p {
+    font-family: "Pacifico", cursive;
+    color: #ff0000;
+    font-size: 21px;
+    text-shadow: 2px 2px 5px gray;
+  }
+  
+  /* Estilo dos botões */
+  .left-buttons,
+  .right-buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 7px;
+  }
+  
+  .left-buttons a,
+  .right-buttons a {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease; 
+    position: relative;
+    background-color: transparent; 
+    border: 2px solid transparent; 
+  }
+  
+  /* Efeito de hover nos botões  */
+  .left-buttons a:hover,
+  .right-buttons a:hover {
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.1); 
+    border-color: #ff0000; 
+  }
+  
+  /* Quadrado atrás do botão */
+  .left-buttons a:hover::before,
+  .right-buttons a:hover::before {
+    content: "";
+    position: absolute;
+    top: -2px; 
+    left: -2px;
+    border: 2px solid #ff0000; 
+    border-radius: 10px; 
+    z-index: -1; 
+}
+
+/* ----------- */
+#text_id {
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  #text_id, #p_id {
+    text-align: center;
+    padding: 5px;
+  }
+  
+  #p_id {
+    font-style: italic;
+  }
+  
+  /* Estilos para a página da galeria */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  /* Estilo para o container de salgados */
+  .salgados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Estilo para cada figura */
+  figure {
+    display: inline-block;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Estilo para as imagens */
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+  }
+  
+  /* Estilo para as legendas */
+  figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    padding: 5px 0;
+  }
+  
+  /* Visualização em tela cheia usando :active (enquanto o mouse está pressionado) */
+  figure:active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  figure:active img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  
+  figure:active figcaption {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 0;
+    width: 100%;
+    text-align: center;
+  }
