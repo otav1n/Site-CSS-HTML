@@ -11,7 +11,7 @@ body {
 }
 
 /* Container principal */
-.ds_lg {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,113 +98,51 @@ body {
   z-index: -1;
 }
 
-/* ----------- */
-#text_id {
-  color: #333;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-#text_id,
-#p_id {
+/* Seção de Portfólio */
+.portfolio {
+  padding: 50px 20px;
+  background-color: #fff;
   text-align: center;
-  padding: 5px;
 }
 
-#p_id {
-  font-style: italic;
+/* Título da seção de Portfólio */
+.portfolio h2 {
+  font-size: 2.5em;
+  color: #d10000;
+  margin-bottom: 30px;
 }
 
-/* Estilos para a página da galeria */
-.container {
+/* Grid de Projetos */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  gap: 30px;
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 0 auto;
+}
+
+/* Estilo para cada projeto */
+.project {
+  background-color: #f7f7f7;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para o container de salgados */
-.salgados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-/* Estilo para cada figura */
-figure {
-  display: inline-block;
-  width: 250px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  background-color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-figure:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Estilo para as imagens */
-figure img {
+.project img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
-  display: block;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-/* Estilo para as legendas */
-figcaption {
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
+.project h3 {
+  font-size: 1.6em;
   color: #333;
-  padding: 5px 0;
+  margin-bottom: 10px;
 }
 
-/* Visualização em tela cheia usando :active (enquanto o mouse está pressionado) */
-figure:active {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1000;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-figure:active img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  border-radius: 0;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-figure:active figcaption {
-  position: absolute;
-  bottom: 20px;
-  color: white;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px 20px;
-  border-radius: 0;
-  width: 100%;
-  text-align: center;
+.project p {
+  font-size: 1.1em;
+  color: #666;
 }
