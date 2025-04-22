@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    line-height: 1.5;
+}
+
+.produto {
+    width: 100%;
+    max-width: 350px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #e7b221;
+    margin-bottom: 0.5rem;
+}
+
+.produto p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.preco {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: #d8cb1b;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ee532c;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #a83a1e;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+@media (max-width: 480px) {
+    .produto {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .produto h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="Logincss.css">
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-header">
+        <h1>Bem-vindo de volta</h1>
+        <p>Por favor, insira suas credenciais para fazer login</p>
+      </div>
+
+      <form action="index.html" method="GET" class="login-form">
+        <div class="form-group">
+          <label for="nome">Nome do Usuario</label>
+          <input type="text" id="email" class="input-field" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" class="input-field" name="password" required />
+        </div>
+
+        <div class="remember-forgot">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Lembrar-me</label>
+          </div>
+          <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit" class="login-button">Entrar</button>
+      </form>
+
+      <div class="signup-link">
+        Não tem uma conta? <a href="#">Cadastrar-se</a>
+      </div>
+    </div>
+  </body>
+</html>
