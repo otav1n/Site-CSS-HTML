@@ -294,4 +294,94 @@
     }
 
 
+
+
+    body {
+      font-family: sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .timer {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #e53e3e;
+    }
+    
+    .timer::after {
+      content: "00:30:00";
+      animation: countdown 120s steps(120) forwards;
+    }
+    
+    @keyframes countdown {
+      0%    { content: "23:30:00"; }
+      0.83% { content: "23:29:59"; }
+      1.67% { content: "23:29:58"; }
+      2.5%  { content: "23:29:57"; }
+      3.33% { content: "23:29:56"; }
+      4.16% { content: "23:29:55"; }
+      5%    { content: "23:29:54"; }
+      6.67% { content: "23:29:53"; }
+      8.33% { content: "23:29:52"; }
+      10%   { content: "23:29:51"; }
+      11.67%{ content: "23:29:50"; }
+      13.33%{ content: "23:29:49"; }
+      15%   { content: "23:29:48"; }
+      16.67%{ content: "23:29:47"; }
+      18.33%{ content: "23:29:46"; }
+      20%   { content: "23:29:45"; }
+      21.67%{ content: "23:29:44"; }
+      23.33%{ content: "23:29:43"; }
+      25%   { content: "23:29:42"; }
+      26.67%{ content: "23:29:41"; }
+      28.33%{ content: "23:29:40"; }
+      30%   { content: "23:29:39"; }
+      31.67%{ content: "23:29:38"; }
+      33.33%{ content: "23:29:37"; }
+      35%   { content: "23:29:36"; }
+      36.67%{ content: "23:29:35"; }
+      38.33%{ content: "23:29:34"; }
+      40%   { content: "23:29:33"; }
+      41.67%{ content: "23:29:32"; }
+      43.33%{ content: "23:29:31"; }
+      45%   { content: "23:29:30"; }
+      46.67%{ content: "23:29:29"; }
+      48.33%{ content: "23:29:28"; }
+      50%   { content: "23:29:27"; }
+      51.67%{ content: "23:29:26"; }
+      53.33%{ content: "23:29:25"; }
+      55%   { content: "23:29:24"; }
+      56.67%{ content: "23:29:23"; }
+      58.33%{ content: "23:29:22"; }
+      60%   { content: "23:29:21"; }
+      61.67%{ content: "23:29:20"; }
+      63.33%{ content: "23:29:19"; }
+      65%   { content: "23:29:18"; }
+      66.67%{ content: "23:29:17"; }
+      68.33%{ content: "23:29:16"; }
+      70%   { content: "23:29:15"; }
+      71.67%{ content: "23:29:14"; }
+      73.33%{ content: "23:29:13"; }
+      75%   { content: "23:29:12"; }
+      76.67%{ content: "23:29:11"; }
+      78.33%{ content: "23:29:10"; }
+      80%   { content: "23:29:09"; }
+      81.67%{ content: "23:29:08"; }
+      83.33%{ content: "23:29:07"; }
+      85%   { content: "23:29:06"; }
+      86.67%{ content: "23:29:05"; }
+      88.33%{ content: "23:29:04"; }
+      90%   { content: "23:29:03"; }
+      91.67%{ content: "23:29:02"; }
+      93.33%{ content: "23:29:01"; }
+      95%   { content: "23:29:00"; }
+      96.67%{ content: "23:28:59"; }
+      98.33%{ content: "23:28:58"; }
+      100%  { content: "23:28:00"; }
+    }
+    
+
   }
