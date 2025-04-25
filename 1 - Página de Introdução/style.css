@@ -20,7 +20,7 @@ body {
   padding: 10px 100px;
   position: relative;
   height: 140px;
-  background-color: #f2f2f2; /* Cor de fundo para separar a área */
+  background-color: #f2f2f2; 
   box-shadow: 10px 10px 30px rgb(209, 206, 206);
 }
 
